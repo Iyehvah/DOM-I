@@ -40,3 +40,117 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+// NAVIGATION
+const nav = document.querySelectorAll('nav a');
+
+
+nav[0].innerHTML = siteContent.nav['nav-item-1'];
+nav[1].innerHTML = siteContent.nav['nav-item-2'];
+nav[2].innerHTML = siteContent.nav['nav-item-3'];
+nav[3].innerHTML = siteContent.nav['nav-item-4'];
+nav[4].innerHTML = siteContent.nav['nav-item-5'];
+nav[5].innerHTML = siteContent.nav['nav-item-6'];
+
+
+//FIRST SECTION
+
+const ctah1 = document.querySelector('.cta-text h1');
+ctah1.innerHTML = siteContent.cta["h1"];
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.innerHTML = siteContent.cta["button"];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = siteContent['cta']["img-src"];
+
+
+// MAIN SECTION
+
+const mainContentImg = document.querySelector('.middle-img');
+mainContentImg.src = siteContent['main-content']["middle-img-src"];
+
+const mainContentH4s = document.querySelectorAll('.text-content h4');
+mainContentH4s[0].innerHTML = siteContent["main-content"]["features-h4"];
+mainContentH4s[1].innerHTML = siteContent["main-content"]["about-h4"];
+mainContentH4s[2].innerHTML = siteContent["main-content"]["services-h4"];
+mainContentH4s[3].innerHTML = siteContent["main-content"]["product-h4"];
+mainContentH4s[4].innerHTML = siteContent["main-content"]["vision-h4"];
+
+const mainContentText = document.querySelectorAll('.text-content p');
+mainContentText[0].innerHTML = siteContent["main-content"]["features-content"];
+mainContentText[1].innerHTML = siteContent["main-content"]["about-content"];
+mainContentText[2].innerHTML = siteContent["main-content"]["services-content"];
+mainContentText[3].innerHTML = siteContent["main-content"]["product-content"];
+mainContentText[4].innerHTML = siteContent["main-content"]["vision-content"];
+
+
+//CONTACT SECTION
+
+const contactSection = document.querySelector('.contact h4');
+contactSection.innerHTML = siteContent["contact"]["contact-h4"];
+
+const contactSectionP = document.querySelectorAll('.contact p');
+contactSectionP[0].innerHTML = siteContent["contact"]["address"];
+contactSectionP[1].innerHTML = siteContent["contact"]["phone"];
+contactSectionP[2].innerHTML = siteContent["contact"]["email"];
+
+const footer = document.querySelector('footer p');
+footer.innerHTML = siteContent["footer"]["copyright"];
+
+// ADDING CONTENT TO NAV
+
+//APPEND
+let navAppend = document.createElement('a');
+let newText = document.createTextNode('Append');
+navAppend.appendChild(newText);
+
+let appendText = document.querySelector('nav');
+appendText.appendChild(navAppend);
+
+//PREPEND
+let navPrepend = document.createElement('a');
+let newTextTwo = document.createTextNode('Prepend');
+navPrepend.appendChild(newTextTwo);
+
+let prependText = document.querySelector('nav');
+prependText.prepend(navPrepend);
+
+//MAKING ATAGS GREEN
+const greenNav = document.getElementsByTagName('a');
+
+for (let i = 0; i < greenNav.length; i++) {
+  greenNav[i].style.color = 'green';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
