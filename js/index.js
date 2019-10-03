@@ -40,3 +40,44 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+// NAVIGATION
+const nav = document.querySelectorAll('nav a');
+
+nav[0].innerHTML = siteContent.nav['nav-item-1'];
+nav[1].innerHTML = siteContent.nav['nav-item-2'];
+nav[2].innerHTML = siteContent.nav['nav-item-3'];
+nav[3].innerHTML = siteContent.nav['nav-item-4'];
+nav[4].innerHTML = siteContent.nav['nav-item-5'];
+nav[5].innerHTML = siteContent.nav['nav-item-6'];
+
+
+//FIRST SECTION
+const ctah1 = document.querySelector('.cta-text h1');
+ctah1.innerHTML = siteContent.cta["h1"];
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.innerHTML = siteContent.cta["button"];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = siteContent['cta']["img-src"];
+
+// MAIN SECTION
+
+const featuresH4 = document.querySelectorAll('main-content h4');
+featuresH4.innerHTML = siteContent["main-content"]['features-h4'];
+
+const mainContentImg = document.querySelector('.middle-img');
+mainContentImg.src = siteContent['main-content']["middle-img-src"];
+
+
+
+
+
+
+
+
+
+
+
