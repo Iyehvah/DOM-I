@@ -45,6 +45,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // NAVIGATION
 const nav = document.querySelectorAll('nav a');
 
+
 nav[0].innerHTML = siteContent.nav['nav-item-1'];
 nav[1].innerHTML = siteContent.nav['nav-item-2'];
 nav[2].innerHTML = siteContent.nav['nav-item-3'];
@@ -97,6 +98,22 @@ contactSectionP[2].innerHTML = siteContent["contact"]["email"];
 
 const footer = document.querySelector('footer p');
 footer.innerHTML = siteContent["footer"]["copyright"];
+
+
+// // CHANGING A TAGS TO GREEN
+// const aTagsColor = document.querySelectorAll('nav a');
+
+// aTagsColor.style.color = 'green';
+// //  Cannot set property 'color' of undefined...................... ITS LATE SO IM GOING TO BED.
+
+// const headerEl = document.querySelector('nav');
+// const subHeadline = document.createElement('a');
+// subHeadline.textContent = "append";
+// subHeadline.style.color = "green";
+// nav.appendChild(subHeadline)
+// const headerEl = document.querySelector('nav');
+// headerEl.appendChild(subHeadline);
+
 
 
 
