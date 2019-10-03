@@ -99,21 +99,30 @@ contactSectionP[2].innerHTML = siteContent["contact"]["email"];
 const footer = document.querySelector('footer p');
 footer.innerHTML = siteContent["footer"]["copyright"];
 
+// ADDING CONTENT TO NAV
 
-// // CHANGING A TAGS TO GREEN
-// const aTagsColor = document.querySelectorAll('nav a');
+//APPEND
+let navAppend = document.createElement('a');
+let newText = document.createTextNode('Append');
+navAppend.appendChild(newText);
 
-// aTagsColor.style.color = 'green';
-// //  Cannot set property 'color' of undefined...................... ITS LATE SO IM GOING TO BED.
+let appendText = document.querySelector('nav');
+appendText.appendChild(navAppend);
 
-// const headerEl = document.querySelector('nav');
-// const subHeadline = document.createElement('a');
-// subHeadline.textContent = "append";
-// subHeadline.style.color = "green";
-// nav.appendChild(subHeadline)
-// const headerEl = document.querySelector('nav');
-// headerEl.appendChild(subHeadline);
+//PREPEND
+let navPrepend = document.createElement('a');
+let newTextTwo = document.createTextNode('Prepend');
+navPrepend.appendChild(newTextTwo);
 
+let prependText = document.querySelector('nav');
+prependText.prepend(navPrepend);
+
+//MAKING ATAGS GREEN
+const greenNav = document.getElementsByTagName('a');
+
+for (let i = 0; i < greenNav.length; i++) {
+  greenNav[i].style.color = 'green';
+}
 
 
 
